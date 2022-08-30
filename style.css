@@ -1,0 +1,238 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   /* background-color: #333;*/
+    font-family: Arial, Helvetica, sans-serif;
+   /* height: 100vh;*/
+   background: url('images/oBread_Rennes_juillet2022_BD_MG_9410b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    padding-bottom: 10px;
+  }
+.container-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+    text-align: center;
+}
+h1 span {
+    position: relative;
+    
+}
+.container-btn {
+    position: relative;
+    top: 50px;
+}
+.container-btns{
+    display: flex       ;
+}
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    width: 216px;
+    color: #f1f1f1;
+    background-color: black;
+    cursor: pointer;
+    
+}
+/*.btn-first:nth-child(1){
+    margin-right: 30px;
+}*/
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.l2 {
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+/*
+
+.logo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+*/
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+    
+}
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: white;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: rgb(117, 109, 109);
+    
+  }
+  
+  .scrolltop__icon{
+    font-size: 1.8rem;
+    color: var(--body-color);
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+    border-color: white;
+  }
+  .nav__link, .nav__logo, .nav__toggle{
+    color: white;
+    font-weight: var(--font-medium);
+    
+  }
+  .nav__toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+  }
+  .nav__item{
+  
+    margin-bottom: 1rem;
+    
+  }
+/*------------------------*/
+@media screen and (max-width: 600px) {
+    
+
+    .welcome{
+        text-transform: uppercase;
+        font-size: 60px;
+        color: #f1f1f1;
+        text-align: center;
+    }
+    .image{
+        
+       
+        background: url('images/oBread_Rennes_juillet2022_BD_MG_9410b.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 1200px;
+                position: relative;
+    }
+    .container-btns{
+        display: none;
+        
+      }
+
+    .button{
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .about__img{
+    height: 100%;
+    width: 100%;
+   }
+   .about__infos{
+    height: 10%;
+    width: 10%;
+   }
+   .about__description{
+    color: white;
+   }
+   .contact__button{
+     position: inherit;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .brcontact{
+    display: none;
+   }
+  }
+  @media screen and (min-width: 768px){
+    body{
+      margin: 0;
+    }
+    .nav__item{
+        margin-left: 2.5rem;
+        margin-bottom: 0;
+      }
+    .section{
+      padding-top: 8rem;
+    }
+   
+   
+}
+  
